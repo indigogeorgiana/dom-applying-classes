@@ -7,7 +7,8 @@ function start () {
   // The first example is done for you. Uncomment the line below and reload the browser.
   one()
   two()
-  three()  
+  three()
+  makeVisible()  
   // Your turn! Create a new function called `two`, then call it from here.
 }
 
@@ -37,3 +38,10 @@ function three () {
 }
 
 // CREATE FUNCTION makeVisible HERE
+function makeVisible () {
+  // First, we have to find the element:
+  var makeVisible = document.getElementsByClassName[0]
+
+  // Next, we apply a new CSS class to it:
+  makeVisible.classList.add('makeVisible')
+}
